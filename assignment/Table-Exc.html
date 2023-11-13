@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+  <style>
+      table{
+          text-align: center;
+      }
+      thead , tfoot{
+          color: blue;
+          background-color: aqua;
+          font-size: 1em;
+          font-weight: bold;
+      }
+  </style>  
+</head>
+<body>
+    <table border="3px solid">
+        <thead>
+             <tr>
+                 <th>نام</th>
+                 <th>نام خانوادگی</th>
+                 <th>موبایل</th>
+                 <th> لفن ثابت</th>
+             </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>حسن1</td>
+                <td>احمدی</td>
+                <td>0912</td>
+                <td> 33</td>
+            </tr>
+            <tr>
+                <td>2حسن</td>
+                <td>حسنی</td>
+                <td rowspan="2">0910</td>
+                <td> 24</td>
+            </tr>
+            <tr>
+                <td colspan="2" , rowspan="2">3حسن</td>
+                
+                <td >0916</td>
+                
+            </tr>
+            <tr>
+                
+                
+                <td >0910</td>
+                <td> 24</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>جمع</td>
+                <td>جمع</td>
+                <td>جمع</td>
+                <td> جمع</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
