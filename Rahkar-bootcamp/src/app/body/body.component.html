@@ -1,0 +1,12 @@
+<p [ngStyle]="{'color':fontcolor()}">body works!</p>
+<!-- <label for="firstnam" >firstname</label>
+<input (input)="onChangeFirstname($event)" name="firstname"> -->
+<button (click)="clicckfun()">login</button>
+<ul>
+    <li>home</li>
+    <li>aboat</li>
+    <li>contact</li>
+    <li *ngFor="let item of menuListItems">
+       <a [href]="item.link" ></a>
+        {{item.title}}</li>
+</ul>

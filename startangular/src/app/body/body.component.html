@@ -1,0 +1,13 @@
+<form class="form-wrapper">
+    <div>
+        <label for="firstname">Firstname:</label>
+        <input (input)="OnChangeFirstname($event)" name="firstname" >
+    </div>
+    <div>
+        <label for="lastname">Lasttname:</label>
+        <input (input)="OnChangeLastname($event)" name="lastname" >
+    </div>
+    <div>
+        <button type="button" (click)="onHandleClick()">Submit form</button>
+    </div>
+</form>

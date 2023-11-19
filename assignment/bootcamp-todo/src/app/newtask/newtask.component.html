@@ -1,0 +1,7 @@
+<form class="form-wrapper">
+    <div>
+        <label for="NewTask">New Task:&nbsp;&nbsp;</label>
+        <input type="text" (input)="onChangeNewTask($event)" [value]="NewTask" name="َNewTask" placeholder="new task">&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="button" (click)="onHandleclick()">Add Task</button>
+    </div>
+</form>

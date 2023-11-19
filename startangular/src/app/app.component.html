@@ -1,0 +1,3 @@
+<app-navbar *ngIf="isshowingnavbar"></app-navbar>
+<app-header [lastname]="lastname"></app-header>
+<app-body (lastnameChange)="onHandeLastname($event)"></app-body>
