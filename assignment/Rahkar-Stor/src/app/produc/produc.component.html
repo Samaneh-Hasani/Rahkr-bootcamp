@@ -1,0 +1,31 @@
+
+<div class="row">
+  
+ <ng-container  *ngFor="let item of products"> 
+     <div class="col-3"> -->
+<div class="card" style="width: 18rem;">
+    <img class="card-img-top" [src]="item.detail" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.name}}</h5>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <button type="button" (click)="seemore(item.id)">seemore</button>
+    </div>
+  </div>
+</div>
+</ng-container>
+ 
+</div>
+<div>
+  <ng-container  *ngFor="let item of product"> 
+    <div class="col-3"> -->
+<div class="card" style="width: 18rem;">
+   <img class="card-img-top" [src]="item.detail" alt="Card image cap">
+   <div class="card-body">
+     <h5 class="card-title">{{item.name}}</h5>
+     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur beatae ad aut assumenda voluptas velit eos explicabo ut corporis delectus necessitatibus, nihil rem odio consectetur eum exercitationem. Praesentium, omnis consequuntur.</p>
+     <h2 class="card-title">{{item.price}}</h2>
+   </div>
+ </div>
+</div>
+</ng-container>
+</div>

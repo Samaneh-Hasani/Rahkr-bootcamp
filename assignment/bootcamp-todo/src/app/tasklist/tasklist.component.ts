@@ -10,11 +10,11 @@ import { CommonModule } from '@angular/common';
 })
 export class TasklistComponent {
 @Input() listItem!:string;
-expression:boolean=false;
+
 arraytask:any[]=[];
-ngOnInit():void{
-  this.arraytask.push(this.listItem);
-  this.expression=true;
+ngOnChanges(){
+  this.arraytask.push({title:this.listItem, done:false});
+  console.log("th")
 }
 
 }

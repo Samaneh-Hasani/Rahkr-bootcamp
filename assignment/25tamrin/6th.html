@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+            function BMM(a,b){
+                var Max=1;
+                var Min=1;
+                var r=1;
+                if(a==b)
+                    console.log(a)
+                else if(a>b){
+                    Max=a;
+                    Min=b;
+                    for(index=0;r!=0;index++){
+                        r=Max%Min;
+                        Max=Min;
+                        Min=r;
+                    }
+                    console.log(Max)
+                }                    
+                else {
+                    Max=b;
+                    Min=a;
+                    for(index=0;r!=0;index++){
+                        r=Max%Min;
+                        Max=Min;
+                        Min=r;
+                    }
+                    console.log(Max)
+                }
+            }
+        
+        BMM(10,50);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

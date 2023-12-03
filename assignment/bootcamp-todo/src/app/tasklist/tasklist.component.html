@@ -1,7 +1,7 @@
 <form >
 <ul>
-    <li>
-        {{listItem}}&nbsp;&nbsp;
+    <li *ngFor="let item of arraytask">
+        {{item.title}}&nbsp;&nbsp;
         <button type="button">down</button> &nbsp;&nbsp;
         <button type="button">delete</button> 
     </li>
@@ -9,4 +9,3 @@
 </form>
 
 
-    
