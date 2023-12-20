@@ -24,6 +24,7 @@ export class TelegramComponent {
     text:["",Validators.required],
     image:["",Validators.required],
     caption:["",Validators.required],
+    NumberInLine:["",Validators.required],
     items:this.formBuilder.array([])
   })
 
@@ -42,21 +43,30 @@ export class TelegramComponent {
     this.items.removeAt(index)
   }
 
-  convertlistToTelegramFormat(list:any[]){
-    var arrayOfTelegramFormat:any=[]
-    var index=0;
-    list.forEach((element,i) => {
-      arrayOfTelegramFormat.push(
-        [
-          {text:element.name,callback_data:element.name}
-        ]
-      )
-      index++;
+  
+  convertlistToTelegramFormat(list:any[])
+  {
+     
+     const colNumber=Number(this.form.value.NumberInLine)
+      var arrayOfTelegramFormat:any=  []
+      var rowNumber=Math.ceil(list.length/colNumber)
+      
+      for(var control=0;control<list.length;)
+      {
+              for(let i=0;i<rowNumber;i++)
+              {
+                          let arrayRow=[];
+                          for(let j=0;j<colNumber;j++)
+                          {                                  
+                              arrayRow.push({text:list[control].name,callback_data:list[control].name})
+                              control++;
+                              if(control===list.length){break;}
 
-    });
-    return arrayOfTelegramFormat
-   
-
+                            }     
+                          arrayOfTelegramFormat.push(arrayRow)                        
+                }
+        }         
+      return arrayOfTelegramFormat
   }
 
   submite(){

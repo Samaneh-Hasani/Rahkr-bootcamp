@@ -16,16 +16,17 @@
           <input type="text" formControlName="text" class="form-control" placeholder="متن ارسالی برای تلگرام">
           <input type="text" formControlName="image" class="form-control" placeholder="عکس ارسالی برای تلگرام">
           <input type="text" formControlName="caption" class="form-control" placeholder="کپشن عکس">
+          <input type="text" formControlName="NumberInLine" class="form-control" placeholder="تعداد چینش در هر سطر را وارد کند">
         </div>
       </div>
   
       <div formArrayName="items">
-  
+       
         <ng-container *ngFor="let item of items.controls; let i=index;let first=first" [formGroupName]="i">
           <div class="row mt-4">
             <div class="col-lg-4 col-12">
               <div class="input-group mb-3" dir="rtl">
-  
+                
                 <input type="text" formControlName="name" class="form-control" [placeholder]="'items'+ i">
                 <span *ngIf="!first" (click)="removeAt(i)" class="input-group-text" id="basic-addon1"><i class="fas fa-trash"></i></span>
                 <span *ngIf="first" (click)="addItems()" class="input-group-text" id="basic-addon1"><i class="fas fa-plus"></i></span>

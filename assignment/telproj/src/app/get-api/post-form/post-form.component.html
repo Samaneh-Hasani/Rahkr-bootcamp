@@ -1,0 +1,15 @@
+<form [formGroup]="formGroup">
+  <div class="form-group">
+    <label for="email">Title:</label>
+    <input type="text" class="form-control" formControlName="title">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Body:</label>
+    <input type="text" class="form-control" formControlName="body">
+  </div>
+  <div class="form-group">
+    <label for="userId">User id:</label>
+    <input type="text" class="form-control" formControlName="userId">
+  </div>
+  <button (click)="onSubmitForm()" type="submit" class="btn btn-default">Submit</button>
+</form>
