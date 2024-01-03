@@ -1,0 +1,11 @@
+<div class="container border border-dark rounded col-lg-10">
+    <form [formGroup]="loginForm">
+      
+        <div >
+          <input formControlName="username" type="text" class="form-control" >
+          <input formControlName="password" type="password" class="form-control" >
+          <button  class="align-center" (click)="onClick()" type="button" class="btn btn-primary">login</button>
+        </div>
+        
+    </form>
+</div>

@@ -1,4 +1,5 @@
 const db = require("../Utilities/DataBase");
+const bcrypt=require("bcrypt")
 class TaskModel {
 
     
@@ -18,6 +19,11 @@ class TaskModel {
       return await db.connection.execute(query);
       
     }
+    // assync register(user){
+    //   const {username,password}=data;
+    //   const salt=await bcrypt.genSalt
+    //   consthashpassword=await bcrypt.hash(password), salt
+    // }
 
   
   }
