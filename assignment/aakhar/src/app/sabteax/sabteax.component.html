@@ -1,0 +1,27 @@
+<p>sabteax works!</p>
+   
+<form [formGroup]="myform">
+      
+    <form>
+        <div class="form-group">
+          <label for="name">name of photo</label>
+          <input type="text" formControlName="name"   placeholder="name of photo">
+         
+        </div>
+        <div class="form-group">
+          <label for="image">photo</label>
+          <!-- <input type="image" formControlName="imageurl" width="48" height="48">  -->
+          <!-- <form action="/action_page.php"> -->
+            <form action="/profile" method="post"  enctype="multipart/form-data">
+              <input type="file" name="avatar"  formControlName="imagefile"/>
+            </form>
+            <!-- <input type="file"  formControlName="imagefile" enctype="multipart/form-data"> -->
+            <!-- <input type="submit"> -->
+          <!-- </form> -->
+        </div>
+        
+        <button type="button" (click)="onClick()" class="btn btn-primary">sabt</button>
+      </form>
+  </form>
+  
+  
