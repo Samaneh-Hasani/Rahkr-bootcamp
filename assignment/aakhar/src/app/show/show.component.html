@@ -1,1 +1,21 @@
-<p>show works!</p>
+<div >
+  <button type="button" (click)="addMore()" >Add more images</button>
+</div>
+
+  <div class="row">
+  
+    <ng-container  *ngFor="let item of images"> 
+        <div class="col-4">
+   <div class="card" style="width: 100%;">
+       <img class="img-responsive card-img-top"  [src]="item.url" >
+       <div class="card-body">
+         <h5 class="card-title">{{item.name}}</h5>
+         
+       
+         
+       </div>
+     </div>
+   </div>
+   </ng-container>
+   
+   </div>

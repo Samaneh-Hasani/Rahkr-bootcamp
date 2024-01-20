@@ -13,28 +13,23 @@ export class PhotoService {
   
   
   sabteax(userfile:any): Observable<any> {
-    const formData: FormData = new FormData();
     
     
-    formData.append('name', userfile.name);
-    formData.append('file', userfile.imagefile);
-    console.log("formdata");
-    console.log(formData);
-    
-    return this.http.post('http://localhost:3000/sabteax', formData, {headers:new HttpHeaders({"Content-Type":"Application/json"})});
+    return this.http.post('http://localhost:3000/sabteax', userfile);    
+    // , {headers:new HttpHeaders({"Content-Type":"Application/x-www-form-urlencoded"})});
   }
 
 
 
 //   sabteax(photo: any): Observable<any> {
             
-//     return this.http.post('http://localhost:3133/sabteax', photo, {headers:new HttpHeaders({"Content-Type":"Application/json"})});
+//     return this.http.post('http://localhost:3133/sabteax', photo, {headers:new HttpHeaders({"Content-Type":"Application/x-www-form-urlencoded"})})
    
 // }
 
-  showax(photo: any): Observable<any> {
+  showax(): Observable<any> {
             
-    return this.http.get('http://localhost:3133/showax');
+    return this.http.get('http://localhost:3000/showax');
   }
 
   

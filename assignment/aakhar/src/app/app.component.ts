@@ -11,5 +11,5 @@ import { SabteaxComponent } from './sabteax/sabteax.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'memories';
+  title = 'aakhar';
 }
