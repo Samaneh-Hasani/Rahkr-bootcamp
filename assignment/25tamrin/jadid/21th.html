@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script>
+            function MaghsomAlay(num){
+                var sumof=0;
+                for(i=1;i<=num/2;i++)
+                    if(num%i==0)
+                    sumof=sumof+i;
+                
+            return sumof;
+            }
+           
+            function tamrin21(){
+                var firstnum=0,secondnum=0;
+                for(index=10;index<=1500;index++){
+                    firstnum=MaghsomAlay(index);
+                    if(firstnum>index){
+                         secondnum=MaghsomAlay(firstnum)
+                     
+                         if(secondnum==index && firstnum!=index)
+                           console.log(firstnum, secondnum);
+                        }
+                    }
+                  
+            }
+            
+            tamrin21();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

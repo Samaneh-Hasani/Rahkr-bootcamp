@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+                        
+            function tamrin14(num){
+                var stringed=num.toString();
+                var numberofEveninEven=0
+                var numberofEveninOdd=0
+                 for (index = 0; index < stringed.length; index++) {
+                     var temp=parseInt(stringed[index]);
+                       if (temp % 2 == 0) {           
+                         if (index % 2 == 0) { 
+                             numberofEveninEven++;
+                          }else{
+                             numberofEveninOdd++
+                          }
+                        }  
+                 }
+                 console.log("تعداد ارقام زوج در جایگاههای زوج : " +numberofEveninEven);
+                 console.log("تعداد ارقام زوج در جایگاههای فرد : " +numberofEveninOdd);
+            }
+               
+            tamrin14(1256)
+           
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            
+           
+            function tamrin25(nums){
+                var numberof=1;
+             for(index=0;index<nums.length;index++){
+                 if(nums[index]!=0){
+                for(i=index+1;i<nums.length;i++){
+                    if (nums[index]==nums[i]){
+                        console.log("این عدد تکراری است : ",nums[index])
+                        nums[i]=0
+                        numberof++;
+                    }
+                    
+                }
+                if (numberof!=1){
+                        console.log("تعداد تکرارش برابراست با: ",numberof)
+                        numberof=1;
+                    }
+                
+             }
+            }
+            
+            }
+
+            tamrin25([1,250,45,420,80,1,45,3,45]);
+            
+        
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

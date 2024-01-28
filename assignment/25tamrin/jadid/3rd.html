@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script>
+            function power_2(num){
+                return num*num;
+            }
+            function power_3(num){
+                return num*num*num;
+            }
+            function radikal(num){
+                var temp=num/2;
+            for(i=0;i<10;i++){
+                temp=0.5*(temp+num/temp);
+                }
+            return temp;
+            }
+            function tamrin3(){               
+                for(index=2;index<21;index++){          
+                console.log("power_2 of number ",index," is : ",power_2(index));
+                console.log("power_3 of number ",index," is : ",power_3(index));
+                console.log("power_3 of number ",index," is : ",radikal(index));
+                }                
+            }
+            tamrin3();
+           
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <script>
+            
+           
+            function tamrin23(day){
+                var month=parseInt(day/31);
+               
+                var year=1402;
+                
+                if (month<=6){
+                    day=day-month*31;
+                    month++
+
+                }else{
+
+                    day=day-186-(month-6)*30;                  
+                    month++;
+                    
+                }
+            
+               
+               
+                  console.log(year,"/",month,"/",day)
+            }
+            tamrin23(60);
+            tamrin23(90);
+            tamrin23(170);
+            tamrin23(217);
+            tamrin23(363);
+            tamrin23(364);
+            tamrin23(365);
+           
+            
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

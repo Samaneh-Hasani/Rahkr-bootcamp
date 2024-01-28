@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script>
+            function tamrin1(num1,num2,num3,num4,num5){
+                var NumberofLargerThanZero=0;
+                var SumofSmallerThanZero=0;
+                var temp=[num1,num2,num3,num4,num5];
+                for(index=0;index<5;index++){
+                    if(temp[index]>=0)
+                        NumberofLargerThanZero++;
+                    else
+                        SumofSmallerThanZero=SumofSmallerThanZero+temp[index]
+                }
+                console.log("تعداد اعداد بزرگتر مساوی صفر",NumberofLargerThanZero);
+                console.log("جمع اعداد کوچکتر از صفر",SumofSmallerThanZero);   
+               
+            }
+            tamrin1(1,5,-6,5,-4)
+           
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

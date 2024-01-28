@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script>
+            
+           
+            function tamrin22(day,month,year){
+                
+                if(1<=month && month<=6){
+                    if(day==31){
+                        month++
+                        day=1
+                    }else{
+                        day++ 
+                    }
+                    
+                }else if(7<=month && month<=11){
+                    if(day==30){
+                        month++
+                        day=1
+                    }else{
+                        day++ 
+                    }
+                    
+                }else if(month==12){          
+                     if(day==29){
+                        year++;
+                        month=1
+                        day=1
+                    }else{
+                        day++ 
+                    }
+                }
+                  console.log(year,"/",month,"/",day)
+            }
+            
+            tamrin22(25,8,1399);
+            tamrin22(29,12,1399);
+            tamrin22(31,6,1399);
+            
+
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

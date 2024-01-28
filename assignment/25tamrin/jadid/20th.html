@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function MaghsomAlay(num){
+                var sumof=0;
+                for(i=1;i<=num/2;i++)
+                    if(num%i==0)
+                    sumof=sumof+i;
+                sumof=sumof+num;
+            return sumof;
+            }
+           
+            function tamrin20(){
+                for(index=1;index<=999;index++){
+                     
+                    if(MaghsomAlay(index)==index*2)
+                    console.log(index);
+                }  
+            }
+            
+            tamrin20();
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
